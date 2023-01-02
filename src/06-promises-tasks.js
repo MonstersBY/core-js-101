@@ -118,6 +118,7 @@ function chainPromises(array, action) {
     }
   })
     .then((res) => res.reduce(action))
+    // eslint-disable-next-line no-console
     .catch((err) => console.log(err));
 }
 
